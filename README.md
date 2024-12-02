@@ -63,7 +63,8 @@ Once port-forwarding is set up, you can access the frontend and backend services
 - ![Screenshot (325)](https://github.com/user-attachments/assets/7c383591-0764-486a-be70-4aa8d25f5eb2)
 
 - Backend: `http://<EC2-Public-IP>:30000`
-- ![Screenshot (320)](https://github.com/user-attachments/assets/950a7e5e-ca20-4f6b-b0a5-cf3afa7c3eec)
+- ![image](https://github.com/user-attachments/assets/a1432472-141c-4488-bd2e-9e705d1f62e6)
+
 
 
 ---
