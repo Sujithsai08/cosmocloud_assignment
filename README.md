@@ -21,7 +21,7 @@ cd cosmocloud-deploy
 ### **3. Install Helm Chart**
 Run the following Helm command to deploy the Cosmocloud application stack:
 ```bash
-helm install testapp ./cosmocloud-deploy --namespace default --atomic --timeout 30s
+helm install testapp cosmocloud-deploy
 ```
 
 This command will:
@@ -34,9 +34,9 @@ Check the status of the deployed pods:
 ```bash
 kubectl get all
 
-![Screenshot (326)](https://github.com/user-attachments/assets/12402ea3-1d13-49bc-acfa-6b180eb47c4f)
-
 ```
+![Screenshot (326)](https://github.com/user-attachments/assets/d0916148-da4b-45ef-88eb-a9e07745b4af)
+
 
 
 ### **5. Port Forwarding **
@@ -52,6 +52,8 @@ If you want to access the frontend or backend locally via `kubectl` port-forward
    ```bash
    kubectl port-forward svc/backend-svc 8000 --address 0.0.0.0
    ```
+  
+
 
    
 
