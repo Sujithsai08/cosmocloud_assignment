@@ -26,8 +26,8 @@ helm install testapp cosmocloud-deploy
 
 This command will:
 - Install the application using the Helm chart.
-- Deploy the frontend, backend, and Redis services in your Kubernetes cluster.
-- Set the timeout to 30 seconds and automatically rollback in case of failure.
+- Deploy the frontend, backend and Redis services in the Kubernetes cluster.
+
 
 ### **4. Verify Deployment**
 Check the status of the deployed pods:
@@ -72,7 +72,7 @@ Once port-forwarding is set up, you can access the frontend and backend services
 
 While working on the assignment, I ran into an issue with the frontend service. the instructions mentioned that the frontend application should be exposed on port 5175, but when I tried accessing it, it didn’t work. So, I decided to dig deeper.
 
-First, I checked the logs of the frontend pod u and I noticed it was actually listening on port 5173. This seemed odd, so then i went to dockerhub and i searched for shreybatra/sample-frontend image then I looked into the Dockerfile of the provided Docker image (shreybatra/sample-frontend). That’s when I realized the application was actually configured to expose port 5173, not 5175 as mentioned in the assignment.
+First, I checked the logs of the frontend pod  and I noticed it was actually listening on port 5173. This seemed odd, so then i went to dockerhub and i searched for shreybatra/sample-frontend image then I looked into the Dockerfile of the provided Docker image (shreybatra/sample-frontend). That’s when I realized the application was actually configured to expose port 5173, not 5175 as mentioned in the assignment.
 
 To fix this, I updated the Helm chart to use port 5173 instead of 5175, and everything worked perfectly after that.
 
