@@ -39,7 +39,7 @@ kubectl get all
 
 
 
-### **5. Port Forwarding **
+### **5. Port Forwarding**
 If you want to access the frontend or backend locally via `kubectl` port-forwarding, use the following commands:
 
 1. **Frontend**:
