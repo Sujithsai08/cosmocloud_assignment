@@ -1,8 +1,8 @@
 
 
-# **Cosmocloud Deployment using Helm**
+# **Cosmocloud_Assignment**
 
-This README outlines the steps to deploy the Cosmocloud application stack (frontend, backend, and Redis) on Kubernetes using Helm. 
+This README outlines the steps to deploy a sample application stack (frontend, backend, and Redis) on Kubernetes using Helm. 
 
 ## **Steps to Deploy the Application Using Helm**
 
